@@ -4,4 +4,44 @@
     box-sizing: border-box;
 }
 
+/* nav bar image and name styling */
+nav{
+   background-color: black; 
+   display: flex;
+   color: white;
+   justify-content: space-between;
+   align-items: center;
+}
 
+nav .logoAndName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logoAndName img{
+    width: 64px;
+}
+
+nav .logoAndName li{
+   list-style-type: none;
+}
+
+/* list items styling */
+nav .navMenu{
+    padding-right: 20px;
+}
+
+nav .navMenu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+nav .navMenu ul li{
+    list-style-type: none;
+   
+}
