@@ -6,6 +6,7 @@
 
 /* nav bar image and name styling */
 nav{
+    width: 100%;
    background-color: black; 
    display: flex;
    color: white;
@@ -44,4 +45,50 @@ nav .navMenu ul{
 nav .navMenu ul li{
     list-style-type: none;
    
+}
+
+/*main section */
+main{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+   padding-top: 50px;
+    
+
+}
+
+.description{
+    width: 40%;
+    padding: 20px;
+    border: solid 3px;
+    margin-left: 25px;
+   
+}
+
+.description h1{
+    text-decoration: underline;
+}
+
+.coverImg{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.coverImg img{
+    height: 280px;
+    width: 400px;
+    
+    
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+   display: flex;
+   margin-top: 400px;
+   align-self: last baseline;
+   padding-left: 0;
 }
