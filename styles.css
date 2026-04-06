@@ -19,6 +19,7 @@ nav .logoAndName{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    padding-left: 20px;
 }
 
 nav .logoAndName img{
@@ -29,9 +30,11 @@ nav .logoAndName li{
    list-style-type: none;
 }
 
+
+
 /* list items styling */
 nav .navMenu{
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 nav .navMenu ul{
@@ -44,8 +47,21 @@ nav .navMenu ul{
 
 nav .navMenu ul li{
     list-style-type: none;
+    
    
 }
+
+ .navMenu  a{
+    color: white;
+    text-decoration: none;
+}
+.navMenu a:hover {
+    color: cyan;
+    opacity: 0.7;
+    text-decoration: underline;
+
+}
+
 
 /*main section */
 main{
@@ -67,6 +83,7 @@ main{
 
 .description h1{
     text-decoration: underline;
+    padding-bottom: 20px;
 }
 
 .coverImg{
@@ -91,4 +108,10 @@ footer{
    margin-top: 400px;
    align-self: last baseline;
    padding-left: 0;
+   justify-content: center;
+}
+
+footer p{
+    color: white;
+   
 }
