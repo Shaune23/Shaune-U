@@ -89,13 +89,16 @@ main {
     width: 100%;
     padding-bottom: 200px;
     background-image: url('images /city.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-weight: 700;
-    color:black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: 700;
+        color: black;
+        position: relative;
        
     
 }
+
+
 
 .overlay{
     position: absolute;
@@ -186,4 +189,28 @@ footer {
 footer p {
     color: white;
 
+}
+
+/*media queries */
+@media only screen and (max-width:500px) {
+
+    /*nav bar */
+
+    .logoAndName li {
+        display: none;
+    }
+
+    nav .navMenu {
+        padding-right: 10px;
+    }
+
+    nav .navMenu ul {
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    
 }

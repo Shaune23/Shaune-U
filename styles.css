@@ -12,6 +12,8 @@ nav{
    color: white;
    justify-content: space-between;
    align-items: center;
+   position: relative;
+   z-index: 1;
 }
 
 nav .logoAndName{
@@ -67,17 +69,71 @@ nav .navMenu ul li{
 main{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
     width: 100%;
    padding-top: 50px;
-    
+   padding-bottom: 300px;
+background-image: url('images /city.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+    color: black;
 
 }
 
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(118, 118, 250);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.skills{
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    border: solid black 3px;
+    margin: 0 20px;
+}
+
+.skills h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.skills-icons{
+    display: flex;
+    padding: 0 150px;
+    justify-content: center;
+}
+.skills img{
+    width: 70px;
+}
+
+.overlay-desc{
+    background-color: white;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+
+}
 .description{
     width: 40%;
     padding: 20px;
     border: solid 3px;
     margin-left: 25px;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
    
 }
 
@@ -90,28 +146,86 @@ main{
     width: 60%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    z-index: 1;
     
 }
 
 .coverImg img{
-    height: 280px;
-    width: 400px;
+    height: 300px;
+    width: 350px;
+    border:solid 3px;
+    border-radius: 50%;
+    margin-right: 25px;
     
     
 }
 
 footer{
     background-color: black;
-    height: 100px;
+    height: 80px;
     width: 100%;
-   display: flex;
-   margin-top: 400px;
-   align-self: last baseline;
-   padding-left: 0;
-   justify-content: center;
+    padding-bottom: 100px;
+display: flex;
+ align-self: last baseline;
+padding-left: 0;
+justify-content: center;
+position: relative;
+    z-index: 1;
 }
 
 footer p{
     color: white;
    
+}
+
+
+
+/* media queries */
+
+@media only screen and (max-width:700px) {
+   
+    /*nav bar */
+   
+    .logoAndName li{
+    display: none;
+   }
+
+   nav .navMenu{
+    padding-right: 10px;
+   }
+
+   nav .navMenu ul{
+    gap: 15px;
+   }
+
+   main{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .top {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+    justify-items: center;
+    align-items: center;
+   }
+
+   .description{
+    width: 90%;
+    margin-right: 20px;
+   }
+
+   .coverImg{
+    justify-content: center;
+   }
+
+   footer{
+    height: 64px;
+    
+   }
+
+
+
 }
