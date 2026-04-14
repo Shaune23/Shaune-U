@@ -94,7 +94,12 @@ background-image: url('images /city.jpeg');
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
+    width: 80%;
+    gap: 25%;
+    align-self: center;
 }
+
+
 
 .skills{
     z-index: 1;
@@ -102,6 +107,8 @@ background-image: url('images /city.jpeg');
     opacity: 0.7;
     border: solid black 3px;
     margin: 0 20px;
+    width: 80%;
+    align-self: center;
 }
 
 .skills h2{
@@ -127,10 +134,9 @@ background-image: url('images /city.jpeg');
 
 }
 .description{
-    width: 40%;
+    width: 50%;
     padding: 20px;
     border: solid 3px;
-    margin-left: 25px;
     position: relative;
     z-index: 2;
     font-weight: 700;
@@ -143,24 +149,72 @@ background-image: url('images /city.jpeg');
 }
 
 .coverImg{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    padding: 0;
+    margin: 0;
     
 }
 
 .coverImg img{
-    height: 300px;
-    width: 350px;
+    height: 400px;
+    width: 450px;
     border:solid 3px;
     border-radius: 50%;
-    margin-right: 25px;
+    margin: 0;
+    
     
     
 }
 
+.cookie-game{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 10%;
+    z-index: 1;
+    opacity: ;
+    position: relative;
+    border: solid black 3px;
+    width: 80%;
+    align-self: center;
+}
+
+.cookie-overlay{
+    background-color: white;
+    position: absolute;
+    inset: 0;
+     z-index: -1;
+    opacity: 0.5;
+    
+}
+
+.cookie-game h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.cookie-game button{
+    background: none;
+    border: none;
+    padding: 0;
+    
+}
+
+button:hover{
+transform: scale(1.1);
+}
+.prediction{
+    background-color: white;
+    width: 60%;
+    height: 50px;
+    align-self: center;
+    border: solid black;
+    padding: 10px;
+}
 footer{
     background-color: black;
     height: 80px;
@@ -183,7 +237,9 @@ footer p{
 
 /* media queries */
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:768px) {
+
+    
    
     /*nav bar */
    
@@ -219,6 +275,11 @@ footer p{
 
    .coverImg{
     justify-content: center;
+   }
+
+   .coverImg img{
+    width: 300px;
+    height: 250px;
    }
 
    footer{
