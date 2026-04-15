@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
 /* nav bar image and name styling */
 nav{
     width: 100%;
@@ -148,6 +151,10 @@ background-image: url('images /city.jpeg');
     padding-bottom: 20px;
 }
 
+.description a{
+    color: rgb(194, 95, 247);
+}
+
 .coverImg{
     width: 50%;
     display: flex;
@@ -170,20 +177,20 @@ background-image: url('images /city.jpeg');
     
 }
 
-.cookie-game{
+#cookie-game{
     display: flex;
     flex-direction: column;
     padding: 40px;
     margin: 10%;
     z-index: 1;
-    opacity: ;
+    opacity:1 ;
     position: relative;
     border: solid black 3px;
     width: 80%;
     align-self: center;
 }
 
-.cookie-overlay{
+#cookie-overlay{
     background-color: white;
     position: absolute;
     inset: 0;
@@ -192,12 +199,12 @@ background-image: url('images /city.jpeg');
     
 }
 
-.cookie-game h2{
+#cookie-game h2{
     text-align: center;
     padding-bottom: 20px;
 }
 
-.cookie-game button{
+#cookie-game button{
     background: none;
     border: none;
     padding: 0;
@@ -207,7 +214,7 @@ background-image: url('images /city.jpeg');
 button:hover{
 transform: scale(1.1);
 }
-.prediction{
+#prediction{
     background-color: white;
     width: 60%;
     height: 50px;

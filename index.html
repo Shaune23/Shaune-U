@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!--style sheet-->
     <link rel="stylesheet" href="styles.css">
-
-    <!--script-->
-    <script src="script.js" defer></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +52,7 @@
 
         <br>
         <br>
-        Feel free to browse around the first iteration of my website, as I get better it will only get better as well. Grap a <a href="">cookie</a> down below. or feel free to go look at my <a href="projects.html">projects</a> thus far. And finaly if you would like to contact me reach out <a href="contact.html">here</a>.
+        Feel free to browse around the first iteration of my website, as I get better it will only get better as well. Grap a <a href="#cookie-game">cookie</a> down below. or feel free to go look at my <a href="projects.html">projects</a> thus far. And finaly if you would like to contact me reach out <a href="contact.html">here</a>.
 
         <br>
         <br>
@@ -75,17 +79,18 @@
             <img src="icons/git-brands-solid-full.svg" alt="">
         </div>
         </div>
-        <div class="cookie-game">
-            <div class="cookie-overlay">
+        <div id="cookie-game">
+            <div id="cookie-overlay">
 
             </div>
             <h2>Click to get a fortune</h2>
-            <button><img src="/images /fortune-cookie.png" alt=""></button>
+            <button id="button"><img src="images /fortune-cookie.png" alt=""></button>
 
-            <p class="prediction"></p>
+            <p id="prediction"></p>
         </div>
     </main>
-    
+    <!--script-->
+    <script src="script.js" defer></script>
 </body>
 <footer>
         <p>Made proudly in zimbabwe </p>

@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+
+html{
+  font-family:'Roboto', sans-serif ;
+  font-weight: 200;
 }
 
 /* nav bar image and name styling */
@@ -78,6 +85,7 @@ body {
 main h1 {
     text-decoration: underline;
     padding: 20px;
+    font-weight: 300;
 }
 
 
@@ -91,7 +99,7 @@ main {
     background-image: url('images /city.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
-        font-weight: 700;
+        
         color: black;
         position: relative;
        
@@ -142,6 +150,7 @@ h1 {
 .card h2 {
     font-size: 36px;
     padding: 20px;
+    font-weight: 400;
 }
 
 
@@ -179,6 +188,13 @@ form button{
     color: white;
     box-shadow: 5%;
     
+}
+
+
+form a img{
+width: 60px;
+margin-left: 106px;
+padding-top: 20px;
 }
 
 footer {

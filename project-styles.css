@@ -5,6 +5,11 @@
     
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
 /* nav bar image and name styling */
 nav {
     width: 100%;
@@ -100,6 +105,7 @@ h1{
     position: relative;
     z-index: 1;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 
@@ -112,7 +118,12 @@ h1{
     padding: 20px;
     position: relative;
     z-index: 1;
+    gap: 20px;
   
+}
+
+.card img:hover {
+    transform: scale(1.1);
 }
 
 .card-overlay{
@@ -125,6 +136,11 @@ h1{
 
 .card-left{
     width: 50%;
+}
+
+.card-left h2{
+    padding-bottom: 25px;
+    text-decoration: underline;
 }
 .card-right{
     width: 50%;
